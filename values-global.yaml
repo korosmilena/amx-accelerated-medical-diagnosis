@@ -8,7 +8,7 @@ global:
 
   datacenter:
     cloudProvider: PROVIDE_CLOUDPROVIDER # Not required for on-prem
-    storageClassName: "ocs-storagecluster-cephfs" # Default filesystem storage used on on-prem cluster, can be changed by user
+    storageClassName: "ocs-storagecluster-ceph-rgw" # Default filesystem storage used on on-prem cluster, can be changed by user
     region: PROVIDE_REGION # Not required for on-prem
     clustername: "" # Not required for on-prem, pattern uses on-prem cluster value instead
     domain: "" # Not required for on-prem, pattern uses on-prem cluster value instead
@@ -19,7 +19,7 @@ global:
     s3:
       # Values for S3 bucket access
       # bucketSource: "provide s3 bucket name where images are stored"
-      bucketSource: "PROVIDE_BUCKET_SOURCE"
+      bucketSource: "rgwbucket-e2b62af4-8092-4cb2-91c9-c1f72ba798f0"
       # Bucket base name used for image-generator and image-server applications.
       bucketBaseName: "xray-source"
 
