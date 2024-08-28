@@ -23,10 +23,6 @@ clusterGroup:
       namespace: xraylab-1
       source: community-operators
 
-    odf:
-      name: odf-operator
-      namespace: openshift-storage
-
     serverless:
       name: serverless-operator
 
